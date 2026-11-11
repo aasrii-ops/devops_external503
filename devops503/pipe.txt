@@ -1,0 +1,19 @@
+pipeline{
+     agent any
+       stages{
+           stage('build and write the code') {
+             steps {
+                   echo "code is being written in the first stage"
+                   }
+           }
+           stage('test') {
+             steps {
+                   echo "code is tested against the requirements"
+                   }
+           }
+           stage('generate artifact') {
+            steps {
+                   echo "artifact is generated"
+                  }
+           }
+      
